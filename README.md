@@ -65,11 +65,11 @@ graph TD
 
     subgraph Next.js on Vercel
         PAGE[app/page.tsx<br/>Server Component]
-        LOGIN[/api/auth/login]
-        CB[/api/auth/callback]
-        LOGOUT[/api/auth/logout]
-        RULES_GET[GET /api/rules]
-        RULES_PATCH[PATCH /api/rules/:id]
+        LOGIN["/api/auth/login"]
+        CB["/api/auth/callback"]
+        LOGOUT["/api/auth/logout"]
+        RULES_GET["GET /api/rules"]
+        RULES_PATCH["PATCH /api/rules/:id"]
         SESSION[lib/session.ts<br/>AES-256-GCM cookie]
         SF_LIB[lib/salesforce.ts<br/>jsforce OAuth2]
     end
